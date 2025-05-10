@@ -1,4 +1,37 @@
 import React from 'react';
+import Image from 'next/image';
+
+interface CompanyLogoProps {
+  company: string;
+  size?: number;
+}
+
+function CompanyLogo({ company, size = 48 }: CompanyLogoProps) {
+  // Map company names to their logo files
+  const logoMap: Record<string, string> = {
+    'Amazon': '/images/amazon_logo.jpeg',
+    'Zhipu.AI': '/images/zdotai_logo.jpeg',
+    'Alibaba Cloud': '/images/alibaba_cloud_computing_company_logo.jpeg',
+  };
+
+  const logoPath = logoMap[company] || '';
+
+  if (!logoPath) return null;
+
+  return (
+    <div className="flex-shrink-0 mr-4">
+      <Image
+        src={logoPath}
+        alt={`${company} logo`}
+        width={size}
+        height={size}
+        className="object-contain dark:brightness-110 dark:contrast-125"
+        priority
+        unoptimized
+      />
+    </div>
+  );
+}
 
 export function Profile() {
   return (
@@ -39,22 +72,32 @@ export function Profile() {
         <h2 className="text-xl font-semibold mb-4">Work Experience</h2>
         <div className="space-y-6">
           <div>
-            <div className="flex justify-between">
-              <h3 className="font-medium">Software Development Engineer Intern</h3>
+            <div className="flex justify-between items-center mb-2">
+              <div className="flex items-center">
+                <CompanyLogo company="Amazon" />
+                <div>
+                  <h3 className="font-medium">Software Development Engineer Intern</h3>
+                  <p className="italic">Amazon</p>
+                </div>
+              </div>
               <p className="text-neutral-600 dark:text-neutral-400">Summer 2025</p>
             </div>
-            <p className="italic">Amazon</p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Upcoming Software Development Engineer Intern for Summer 2025.</li>
             </ul>
           </div>
 
           <div>
-            <div className="flex justify-between">
-              <h3 className="font-medium">Software Engineer Intern</h3>
+            <div className="flex justify-between items-center mb-2">
+              <div className="flex items-center">
+                <CompanyLogo company="Zhipu.AI" />
+                <div>
+                  <h3 className="font-medium">Software Engineer Intern</h3>
+                  <p className="italic">Zhipu.AI</p>
+                </div>
+              </div>
               <p className="text-neutral-600 dark:text-neutral-400">Dec 2023 - July 2024</p>
             </div>
-            <p className="italic">Zhipu.AI</p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Developed and researched software engineering agents (based on SWE-Agent and Agentless) on top of GLM family of models. Ran experiments and benchmarks to improve model software engineering performance.</li>
               <li>Curated a 250+ entry benchmark dataset from 10 open-source repos for internal RAG evaluation.</li>
@@ -63,11 +106,16 @@ export function Profile() {
           </div>
 
           <div>
-            <div className="flex justify-between">
-              <h3 className="font-medium">Solutions Architect</h3>
+            <div className="flex justify-between items-center mb-2">
+              <div className="flex items-center">
+                <CompanyLogo company="Alibaba Cloud" />
+                <div>
+                  <h3 className="font-medium">Solutions Architect</h3>
+                  <p className="italic">Alibaba Cloud</p>
+                </div>
+              </div>
               <p className="text-neutral-600 dark:text-neutral-400">Mar 2022 – July 2023</p>
             </div>
-            <p className="italic">Alibaba Cloud</p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Pre-sales consultant, trainer, and support engineer for cross-functional teams of engineers, business development, clients, and partners, directing the design and implementation of big data and AI initiatives for over 60 companies across fintech, airlines, logistics, and government sectors in Southeast Asia.</li>
               <li>Led key initiatives: Building OLAP data warehouse on cloud, data management and governance with DataWorks, cloud transactional database management, Hadoop ecosystem, real-time sync with Flink, cost/performance optimization, recommendation engine, and LLM integration with vector databases.</li>

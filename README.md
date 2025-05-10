@@ -1,6 +1,6 @@
-# Portfolio Blog Starter
+# Matthew Evan Taruno's Portfolio
 
-This is a porfolio site template complete with a blog. Includes:
+This is my personal portfolio site complete with a blog. Includes:
 
 - MDX and Markdown support
 - Optimized for SEO (sitemap, robots, JSON-LD schema)
@@ -15,9 +15,23 @@ This is a porfolio site template complete with a blog. Includes:
 
 https://portfolio-blog-starter.vercel.app
 
+## Company Logos
+
+To add company logos to the work experience section:
+
+1. Add your logo files to the `public/images` directory with the following names:
+   - `amazon_logo.jpeg` - Amazon logo
+   - `zdotai_logo.jpeg` - Zhipu.AI logo
+   - `alibaba_cloud_computing_company_logo.jpeg` - Alibaba Cloud logo
+
+2. For best results:
+   - Use JPEG or PNG format (PNG with transparency works best)
+   - Ensure logos are at least 200x200 pixels (they'll be displayed at 48x48)
+   - Use company logos with simple backgrounds
+
 ## How to Use
 
-You can choose from one of the following two methods to use this repository:
+You can deploy this portfolio using Vercel:
 
 ### One-Click Deploy
 

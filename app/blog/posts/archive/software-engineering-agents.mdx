@@ -6,16 +6,16 @@ summary: 'Insights from my experience developing software engineering agents on 
 
 # Building Software Engineering Agents with Large Language Models
 
-During my time at Zhipu.AI, I had the opportunity to work on developing software engineering agents powered by large language models (LLMs). This experience provided me with valuable insights into the challenges and potential of AI-assisted software development. In this post, I'll share some of the key learnings from this project.
 
 ## The Challenge of Software Engineering Agents
 
-Software engineering is a complex domain that requires not just understanding code, but also comprehending project structures, design patterns, and the intent behind implementations. Building an agent that can effectively assist in this domain presents several challenges:
+Software engineering is a complex domain that requires not just understanding code, but also comprehending project structures, design patterns, and the intent behind implementations. 
+
+
+Building an agent that can effectively assist in this domain presents several challenges:
 
 1. **Context Understanding**: Software projects often span multiple files and directories with complex interdependencies. Agents need to understand the broader context beyond a single file.
-
 2. **Tool Integration**: Effective software engineering agents need to interact with various development tools like version control systems, build tools, and IDEs.
-
 3. **Code Generation Quality**: Generated code must not only be syntactically correct but also adhere to project-specific conventions and best practices.
 
 ## Our Approach
@@ -25,7 +25,6 @@ Our approach to building software engineering agents involved several key compon
 ### Repository-Level Understanding
 
 We developed a pipeline that combined embedding techniques, retrieval algorithms, and chunking strategies to help the model understand code at the repository level. This allowed the agent to:
-
 - Navigate complex codebases
 - Understand relationships between different components
 - Provide contextually relevant suggestions
@@ -48,8 +47,9 @@ Our initial implementation achieved a baseline top-k retrieval accuracy of 35%, 
 
 1. **Chunking Strategy Matters**: The way code is divided into chunks significantly impacts retrieval performance. Finding the right balance between chunk size and semantic coherence is crucial.
 
-2. **User Experience is Key**: Technical performance metrics are important, but user experience considerations like response time, clarity of explanations, and the ability to refine requests are equally critical.
 
+
+2. **User Experience is Key**: Technical performance metrics are important, but user experience considerations like response time, clarity of explanations, and the ability to refine requests are equally critical.
 3. **Domain-Specific Fine-Tuning**: Models fine-tuned on programming tasks perform significantly better than general-purpose models, even when the latter have more parameters.
 
 ## Future Directions
@@ -57,13 +57,9 @@ Our initial implementation achieved a baseline top-k retrieval accuracy of 35%, 
 The field of AI-assisted software engineering is rapidly evolving, and there are several exciting directions for future work:
 
 1. **Multi-Modal Understanding**: Incorporating documentation, diagrams, and other non-code artifacts into the agent's understanding.
-
 2. **Long-Term Memory**: Developing mechanisms for agents to remember past interactions and project-specific details over extended periods.
-
 3. **Collaborative Workflows**: Creating agents that can effectively collaborate with human developers, understanding when to suggest solutions versus when to ask for clarification.
 
 ## Conclusion
-
 Building software engineering agents presents unique challenges but also offers tremendous potential to enhance developer productivity. By focusing on repository-level understanding, rigorous benchmarking, and user experience, we can create AI assistants that truly augment human capabilities in software development.
-
 The journey toward more capable software engineering agents is just beginning, and I'm excited to see how this field evolves in the coming years.

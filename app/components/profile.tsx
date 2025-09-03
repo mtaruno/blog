@@ -80,10 +80,10 @@ export function Profile() {
                   <p className="italic">Amazon</p>
                 </div>
               </div>
-              <p className="text-neutral-600 dark:text-neutral-400">Summer 2025</p>
+              <p className="text-neutral-600 dark:text-neutral-400">Bellevue, WA | June 2025 – Present</p>
             </div>
             <ul className="list-disc pl-5 mt-2 space-y-1">
-              <li>Rearchitected SNS → SQS → Lambda → DynamoDB pipeline with CloudFormation, processing millions of events/day and reducing infra costs by > 60%, while improving simplicity and accuracy of downstream merchant item processing used across multiple teams.</li>
+              <li>Rearchitected SNS → SQS → Lambda → DynamoDB pipeline with CloudFormation, processing millions of events/day and reducing infra costs by &gt; 60%, while improving simplicity and accuracy of downstream merchant item processing used across multiple teams.</li>
               <li>Shipped phased prod rollouts with auto-rollback on CloudWatch with 4 custom metrics and 10 alarms.</li>
               <li>Coordinated with 2 external service teams to integrate data-pipelines via PrivateLink across VPCs, delivering a secure, low-latency connection; authored a low-level design document as a foundational reference.</li>
             </ul>

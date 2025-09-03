@@ -11,6 +11,14 @@ type Project = {
 export function Projects() {
   const projects: Project[] = [
     {
+      title: "Learning Neural CBF–CLF Critics for Safe Long-Horizon Robotic Task Success",
+      description: [
+        "Developing a multi-critic RL framework in Isaac Gym for robotic tasks, integrating barrier functions for safety and neural Lyapunov functions for feasibility to improve long-horizon success (for ICRA 2026)."
+      ],
+      link: "https://github.com/mtaruno/long-horizon.git",
+      linkText: "GitHub Repo"
+    },
+    {
       title: "Hestia Parenting Copilot",
       description: [
         "Developed Hestia AI, a co-parenting assistant powered by a custom Graph RAG pipeline using Neo4j Aura, clustering, subgraph retrieval, and domain-specific ontology, integrating 300+ parenting resources.",

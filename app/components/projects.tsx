@@ -31,7 +31,7 @@ export function Projects() {
       title: "Creaova State Machine – Autonomous Delivery Multi-Robot System Integration",
       description: [
         "Built a distributed robotic system using ROS2 Humble to coordinate Creator, Kinova arm, and vision stack for an autonomous delivery sequence; implemented the global state machine and optimized messaging",
-        "Led integration across perception, navigation, manipulation, and hardware/software teams by standardiz- ing ROS2 message formats and aligning system architecture for robust cross-module collaboration"
+        "Led integration across perception, navigation, manipulation, and hardware/software teams by standardizing ROS2 message formats and aligning system architecture for robust cross-module collaboration"
       ],
       link: "https://github.com/mtaruno/creova-state-machine.git",
       linkText: "GitHub Repo"

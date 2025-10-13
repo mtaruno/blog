@@ -83,9 +83,9 @@ export function Profile() {
               <p className="text-neutral-600 dark:text-neutral-400">Bellevue, WA | June 2025 – Present</p>
             </div>
             <ul className="list-disc pl-5 mt-2 space-y-1">
-              <li>Rearchitected SNS &rarr; SQS &rarr; Lambda &rarr; DynamoDB pipeline with CloudFormation, processing millions of events/day and reducing infra costs by &gt; 60%, while improving simplicity and accuracy of downstream merchant item processing used across multiple teams.</li>
-              <li>Shipped phased prod rollouts with auto-rollback on CloudWatch with 4 custom metrics and 10 alarms.</li>
-              <li>Coordinated with 2 external service teams to integrate data-pipelines via PrivateLink across VPCs, delivering a secure, low-latency connection; authored a low-level design document as a foundational reference.</li>
+              <li>Architected and deployed a new event-driven data pipeline (SNS → SQS → Lambda → DynamoDB) using CloudFormation and cross-VPC PrivateLink network infrastructure in Java, optimizing for cost, efficiency, and simplicity to process millions of daily events and achieve an &gt; 80% reduction in infrastructure costs.</li>
+              <li>Led the elimination of over 100B unused database entries by designing a more accurate data model and event source, directly improving the performance of downstream item classification systems.</li>
+              <li>Authored a comprehensive low-level design (LLD) document analyzing system trade-offs, establishing a validation framework for the Beta rollout, and defining a robust rollback strategy for production stability.</li>
             </ul>
           </div>
 
@@ -103,7 +103,7 @@ export function Profile() {
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Developed and researched software engineering agents (based on SWE-Agent and Agentless) on top of GLM family of models. Ran experiments and benchmarks to improve model software engineering performance.</li>
               <li>Curated a 250+ entry benchmark dataset from 10 open-source repos for internal RAG evaluation.</li>
-              <li>Collaborated with engineering and product teams, providing key feedback on user experience to extend the CodeGeeX assistant's repository-level query understanding. Developed a pipeline of embedding, retrieval algorithms, chunking, and in-context learning, achieving a baseline top-k retrieval accuracy of 35%.</li>
+              <li>Collaborated with engineering and product teams, providing key feedback on user experience to extend the CodeGeeX assistant's repository-level query understanding; leveraged retrieval algorithms, chunking, and in-context learning, achieving normalized top-K file retrieval accuracy of 35-50% as baseline performance.</li>
             </ul>
           </div>
 

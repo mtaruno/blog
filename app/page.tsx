@@ -9,7 +9,7 @@ export default function Page() {
           Matthew Evan Taruno
         </h1>
         <p className="text-lg text-neutral-700 dark:text-neutral-300">
-          Software Engineer | Machine Learning Engineer | Solutions Architect
+          Software Engineer | Applied Scientist | Machine Learning Engineer
         </p>
         <p className="text-md text-neutral-600 dark:text-neutral-400">
           Amazon SDE Intern 2025

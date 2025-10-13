@@ -83,7 +83,7 @@ export function Profile() {
               <p className="text-neutral-600 dark:text-neutral-400">Bellevue, WA | June 2025 – Present</p>
             </div>
             <ul className="list-disc pl-5 mt-2 space-y-1">
-              <li>Architected and deployed a new event-driven data pipeline (SNS → SQS → Lambda → DynamoDB) using CloudFormation and cross-VPC PrivateLink network infrastructure in Java, optimizing for cost, efficiency, and simplicity to process millions of daily events and achieve an &gt; 80% reduction in infrastructure costs.</li>
+              <li>Architected and deployed a new event-driven data pipeline (SNS &rarr; SQS &rarr; Lambda &rarr; DynamoDB) using CloudFormation and cross-VPC PrivateLink network infrastructure in Java, optimizing for cost, efficiency, and simplicity to process millions of daily events and achieve an &gt; 80% reduction in infrastructure costs.</li>
               <li>Led the elimination of over 100B unused database entries by designing a more accurate data model and event source, directly improving the performance of downstream item classification systems.</li>
               <li>Authored a comprehensive low-level design (LLD) document analyzing system trade-offs, establishing a validation framework for the Beta rollout, and defining a robust rollback strategy for production stability.</li>
             </ul>
